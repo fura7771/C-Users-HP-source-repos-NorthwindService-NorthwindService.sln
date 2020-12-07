@@ -18,13 +18,13 @@ namespace NorthwindService.Controllers
                 db.Products.Add(new Product { Name = "товар" });
                 db.SaveChanges();
             }
-        }
+        }// рорпмпроо 
 
         [HttpGet]
         public IEnumerable<object> Get()
         {
-            var product = db.Products.ToArray();
-            return product;
+            var Product = db.Products.ToArray();
+            return Product;
         }
     }
 }
