@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29613.14
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.136
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NorthwindService", "NorthwindService\NorthwindService.csproj", "{30F2EA42-4DE5-4CE5-8BF2-FD78EEA0A0A9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gril", "Gril\Gril.csproj", "{637E8EC3-C2B2-48F7-8265-322780CC700F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp1", "WpfApp1\WpfApp1.csproj", "{BB12886E-A49F-4EB4-8E38-7BB084B0F048}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{637E8EC3-C2B2-48F7-8265-322780CC700F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{637E8EC3-C2B2-48F7-8265-322780CC700F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{637E8EC3-C2B2-48F7-8265-322780CC700F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB12886E-A49F-4EB4-8E38-7BB084B0F048}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB12886E-A49F-4EB4-8E38-7BB084B0F048}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB12886E-A49F-4EB4-8E38-7BB084B0F048}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB12886E-A49F-4EB4-8E38-7BB084B0F048}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
