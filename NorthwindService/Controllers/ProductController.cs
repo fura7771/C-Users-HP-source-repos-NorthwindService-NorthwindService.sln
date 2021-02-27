@@ -18,7 +18,7 @@ namespace NorthwindService.Controllers
                 db.Products.Add(new Product { Name = "товар" });
                 db.SaveChanges();
             }
-        }// рорпмпроо 
+        }
 
         [HttpGet]
         public IEnumerable<object> Get()
