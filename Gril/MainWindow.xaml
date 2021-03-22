@@ -8,29 +8,40 @@
         Title="FOODCOR" Height="450" Width="800">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="81*"/>
-            <ColumnDefinition Width="79*"/>
+            <ColumnDefinition Width="405*"/>
+            <ColumnDefinition Width="307*"/>
+            <ColumnDefinition Width="88*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="4*"/>
-            <RowDefinition Height="27*"/>
+            <RowDefinition Height="28*"/>
+            <RowDefinition Height="158*"/>
+           
         </Grid.RowDefinitions>
         <Label Grid.Column="0" Background="#FF6783B4"></Label>
-        <Label Grid.Column="1" Background="#FF382D2D">
+        <Label Grid.Column="1" Background="#FF382D2D" Grid.ColumnSpan="2">
             <TextBox x:Name="textBox" TextWrapping="Wrap" Width="120" DataContext="{Binding ElementName=dockPanel, Mode=OneWay}"/>
 
         </Label>
-        <ListBox Grid.Row="1"  x:Name="ItsNames"/>
-        <DockPanel x:Name="dockPanel" Background="Black" Grid.Column="1" Grid.Row="1"  >
-            <Button Margin="0.5" DockPanel.Dock="Top" Width="400" Height="40" Background="#FFB9AE3E" Content="ВЫПЕЧКА"  Click="Button_Click_1" ></Button>
-            <Button Margin="0.5" DockPanel.Dock="Top" Width="400" Height="40" Background="#FFCD653F" Content="ДЕСЕРТЫ"  Click="Button_Click_1" ></Button>
-            <Button Margin="0.5" DockPanel.Dock="Top"  Width="400" Height="40" Background="#FFE21B36" Content="ДОНЕРЫ"  Click="Button_Click_1" ></Button>
-            <Button Margin="0.5" DockPanel.Dock="Top" Width="400" Height="40" Background="#FF811616" Content="САЛАТЫ"  Click="Button_Click_1" ></Button>
-            <Button Margin="0.5" DockPanel.Dock="Top"  Width="400" Height="40" Background="#FF1B3487" Content="ДОБАВКИ"  Click="Button_Click_1" ></Button>
-            <Button Margin="0.5" DockPanel.Dock="Top"  Width="400" Height="40" Background="#FFB92CBF" Content="НАПИТКИ/МОРСЫ"  Click="Button_Click_1" ></Button>
-            <Button Margin="0.5" DockPanel.Dock="Top"  Width="400" Height="40" Background="#FF42B973" Content="КОФЕ/ЧАЙ"  Click="Button_Click_1" ></Button>
-            <Button Margin="0.5" DockPanel.Dock="Top"  Width="400" Height="40" Background="#FF6B9B92" Content="ШОКОЛАД/ОРБИТ"  Click="Button_Click_1" ></Button>
-            <Button Margin="0.5" DockPanel.Dock="Top"  Width="400" Height="40" Background="#FF426DB9" Content="ПАКЕТ/МАСКА/АНТИСЕПТИК"  Click="Button_Click_1" ></Button>
-        </DockPanel>
+        <ListBox  x:Name="ItsNames" Margin="0,56,0,0" Grid.RowSpan="2" SelectionChanged="ItsNames_SelectionChanged">
+            <StackPanel x:Name="dockPanel1">
+                <Label x:Name="labelListbox" />
+
+            </StackPanel>
+
+        </ListBox>
+        
+        <StackPanel x:Name="dockPanel" Background="Black" Grid.Column="1" Grid.ColumnSpan="2" Margin="0,56,0,0" Grid.RowSpan="2">
+            <Button Margin="0.5"  HorizontalAlignment="Left" Width="300" Height="30" Background="#FFDC1C1C" Content="ВЫПЕЧКА" Click='Button_Click' ></Button>
+            <Button Margin="0.5"  HorizontalAlignment="Left" Width="300" Height="30" Background="#FFF50707" Content="ДЕСЕРТЫ" Click="Button_Click_1"  ></Button>
+            <Button Margin="0.5"  HorizontalAlignment="Left" Width="300" Height="30" Background="#FFF35C16" Content="ДОНЕРЫ" Click="Button_Click_2"  ></Button>
+            <Button Margin="0.5"  HorizontalAlignment="Left" Width="300" Height="30" Background="#FFD1B63D" Content="Супы" Click="Button_Click_3" ></Button>
+            <Button Margin="0.5"  HorizontalAlignment="Left" Width="300" Height="30" Background="#FFF5E009" Content="САЛАТЫ"  Click="Button_Click_4" ></Button>
+            <Button Margin="0.5"  HorizontalAlignment="Left" Width="300" Height="30" Background="#FF3DEA0A" Content="ДОБАВКИ" Click="Button_Click_5" ></Button>
+            <Button Margin="0.5"  HorizontalAlignment="Left" Width="300" Height="30" Background="#FF329C37" Content="НАПИТКИ/МОРСЫ" Click="Button_Click_6" ></Button>
+            <Button Margin="0.5"  HorizontalAlignment="Left" Width="300" Height="30" Background="#FF9315DA" Content="КОФЕ/ЧАЙ" Click="Button_Click_7"  ></Button>
+            <Button Margin="0.5"  HorizontalAlignment="Left" Width="300" Height="30" Background="#FFEC12D8" Content="ШОКОЛАД/ОРБИТ" Click="Button_Click_8" ></Button>
+            <Button Margin="0.5"  HorizontalAlignment="Left" Width="300" Height="30" Background="#FF1362EC" Content="ПАКЕТ/МАСКА/АНТИСЕПТИК" Click="Button_Click_9" ></Button>
+        </StackPanel>
+
     </Grid>
 </Window>
