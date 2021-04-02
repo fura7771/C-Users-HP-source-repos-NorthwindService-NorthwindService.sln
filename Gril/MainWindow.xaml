@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Gril"
         mc:Ignorable="d"
+        
         Title="FOODCOR" Height="450" Width="800">
     <Grid>
         <Grid.ColumnDefinitions>
@@ -30,18 +31,18 @@
 
         </ListBox>
         
-        <StackPanel x:Name="dockPanel" Background="Black" Grid.Column="1" Grid.ColumnSpan="2" Margin="0,56,0,0" Grid.RowSpan="2">
-            <Button Margin="0.5"  HorizontalAlignment="Left" Width="300" Height="30" Background="#FFDC1C1C" Content="ВЫПЕЧКА" Click='Button_Click' ></Button>
-            <Button Margin="0.5"  HorizontalAlignment="Left" Width="300" Height="30" Background="#FFF50707" Content="ДЕСЕРТЫ" Click="Button_Click_1"  ></Button>
-            <Button Margin="0.5"  HorizontalAlignment="Left" Width="300" Height="30" Background="#FFF35C16" Content="ДОНЕРЫ" Click="Button_Click_2"  ></Button>
-            <Button Margin="0.5"  HorizontalAlignment="Left" Width="300" Height="30" Background="#FFD1B63D" Content="Супы" Click="Button_Click_3" ></Button>
-            <Button Margin="0.5"  HorizontalAlignment="Left" Width="300" Height="30" Background="#FFF5E009" Content="САЛАТЫ"  Click="Button_Click_4" ></Button>
-            <Button Margin="0.5"  HorizontalAlignment="Left" Width="300" Height="30" Background="#FF3DEA0A" Content="ДОБАВКИ" Click="Button_Click_5" ></Button>
-            <Button Margin="0.5"  HorizontalAlignment="Left" Width="300" Height="30" Background="#FF329C37" Content="НАПИТКИ/МОРСЫ" Click="Button_Click_6" ></Button>
-            <Button Margin="0.5"  HorizontalAlignment="Left" Width="300" Height="30" Background="#FF9315DA" Content="КОФЕ/ЧАЙ" Click="Button_Click_7"  ></Button>
-            <Button Margin="0.5"  HorizontalAlignment="Left" Width="300" Height="30" Background="#FFEC12D8" Content="ШОКОЛАД/ОРБИТ" Click="Button_Click_8" ></Button>
-            <Button Margin="0.5"  HorizontalAlignment="Left" Width="300" Height="30" Background="#FF1362EC" Content="ПАКЕТ/МАСКА/АНТИСЕПТИК" Click="Button_Click_9" ></Button>
-        </StackPanel>
-
+            <StackPanel x:Name="Menu" Background="Black" Grid.Column="1" Grid.ColumnSpan="2" Margin="0,56,0,0" Grid.RowSpan="2">
+                <Button Margin="0.5"  HorizontalAlignment="Left" Width="300" Height="30" Background="#FFDC1C1C" Content="ВЫПЕЧКА" Click='Button_Click' ></Button>
+                <Button Margin="0.5"  HorizontalAlignment="Left" Width="300" Height="30" Background="#FFF50707" Content="ДЕСЕРТЫ" Click="Button_Click_1"  ></Button>
+                <Button Margin="0.5"  HorizontalAlignment="Left" Width="300" Height="30" Background="#FFF35C16" Content="ДОНЕРЫ" Click="Button_Click_2"  ></Button>
+                <Button Margin="0.5"  HorizontalAlignment="Left" Width="300" Height="30" Background="#FFD1B63D" Content="Супы" Click="Button_Click_3" ></Button>
+                <Button Margin="0.5"  HorizontalAlignment="Left" Width="300" Height="30" Background="#FFF5E009" Content="САЛАТЫ"  Click="Button_Click_4" ></Button>
+                <Button Margin="0.5"  HorizontalAlignment="Left" Width="300" Height="30" Background="#FF3DEA0A" Content="ДОБАВКИ" Click="Button_Click_5" ></Button>
+                <Button Margin="0.5"  HorizontalAlignment="Left" Width="300" Height="30" Background="#FF329C37" Content="НАПИТКИ/МОРСЫ" Click="Button_Click_6" ></Button>
+                <Button Margin="0.5"  HorizontalAlignment="Left" Width="300" Height="30" Background="#FF9315DA" Content="КОФЕ/ЧАЙ" Click="Button_Click_7"  ></Button>
+                <Button Margin="0.5"  HorizontalAlignment="Left" Width="300" Height="30" Background="#FFEC12D8" Content="ШОКОЛАД/ОРБИТ" Click="Button_Click_8" ></Button>
+                <Button Margin="0.5"  HorizontalAlignment="Left" Width="300" Height="30" Background="#FF1362EC" Content="ПАКЕТ/МАСКА/АНТИСЕПТИК" Click="Button_Click_9" ></Button>
+            </StackPanel>
+       
     </Grid>
 </Window>
