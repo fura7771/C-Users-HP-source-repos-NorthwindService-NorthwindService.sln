@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,6 +16,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+
 namespace Gril
 {
     /// <summary>
@@ -22,26 +24,38 @@ namespace Gril
     /// </summary>
     public partial class MainWindow : Window
     {
+
         public MainWindow()
         {
             InitializeComponent();
-            Category.ItemsSource = KassaEntities.GetContext().Categories.ToList();
-
-
-        }
-      
-        private void ItsNames_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            ProductDetals product = new ProductDetals();
-            product.ShowDialog();
-            
-
+          /// FrameWindows.Navigate(new ProductDetals());
+            DGridCategorys.ItemsSource = KassaEntities.GetContext().Categories.ToList();
         }
         
+        private void ProductOpin_Click(object sender, RoutedEventArgs e)
+        {
+             FrameWindows.Content = new ProductDetals();
+        }
+        
+        private void Kassa_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void BackTo_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ClosedOrders_Click(object sender, RoutedEventArgs e)
+        {
+       
+        }
+
+        private void ListBack_Click(object sender, RoutedEventArgs e)
+        {
+           
+        }
+      
     }
 }

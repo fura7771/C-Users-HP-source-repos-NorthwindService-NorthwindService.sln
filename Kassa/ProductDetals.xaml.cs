@@ -10,6 +10,7 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Kassa
@@ -17,13 +18,13 @@ namespace Kassa
     /// <summary>
     /// Логика взаимодействия для ProductDetals.xaml
     /// </summary>
-    public partial class ProductDetals : Window
+    public partial class ProductDetals : Page
     {
         public ProductDetals()
         {
             InitializeComponent();
-            Product.ItemsSource = KassaEntities.GetContext().Products.ToList();
-
+          //  LViewProduct.ItemsSource = KassaEntities.GetContext().Products.ToList();
+            
         }
     }
 }

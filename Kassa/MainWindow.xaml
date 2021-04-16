@@ -7,39 +7,35 @@
         mc:Ignorable="d"
         
         Title="FOODCOR" Height="450" Width="800">
-    
-    <Grid>
+   
+        <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="405*"/>
-            <ColumnDefinition Width="307*"/>
-            <ColumnDefinition Width="88*"/>
+            <ColumnDefinition Width="400*"/>
+            <ColumnDefinition Width="400*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="28*"/>
-            <RowDefinition Height="158*"/>
-
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="282*"/>
+            <RowDefinition Height="75*"/>
         </Grid.RowDefinitions>
-        <Label Grid.Column="0" Background="#FF6783B4"></Label>
-        <Label Grid.Column="1" Background="#FF382D2D" Grid.ColumnSpan="2" Margin="0,-2,0,2"/>
-        <ListBox  x:Name="ItsNames" Margin="2,62,302,-6" SelectionChanged="ItsNames_SelectionChanged" Grid.ColumnSpan="2" Grid.RowSpan="2">
-            <StackPanel x:Name="dockPanel1">
-                <Label x:Name="labelListbox" />
+        <DataGrid x:Name="DGridCategorys" Grid.Row="1" Grid.Column="1" AutoGenerateColumns="False" IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn  Binding="{Binding Name}" FontSize="16" Width="*"></DataGridTextColumn>
+             <DataGridTemplateColumn Width="auto">
+                <DataGridTemplateColumn.CellTemplate>
+                    <DataTemplate>
+                        <Button Content="Список" Name="ProductOpin" Click="ProductOpin_Click" ></Button>
+                    </DataTemplate>
+                </DataGridTemplateColumn.CellTemplate>
+            </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Frame x:Name="FrameWindows" Grid.Column="1" Grid.Row="1" NavigationUIVisibility="Hidden"></Frame>
+        <Button Content="Назад" Name="ListBack" Grid.Column="1" HorizontalAlignment="Left" Click="ListBack_Click"></Button>
+        <Button Content="Касса" Name="Kassa" Grid.Column="1" Grid.Row="2" HorizontalAlignment="Right" Click="Kassa_Click"></Button>
+        <Button Content="Назад" Name="BackTo" Grid.Column="0" Grid.Row="2" HorizontalAlignment="Left" Click="BackTo_Click"></Button>
+        <Button Content="Закрытые заказые" Name="ClosedOrders" Grid.Column="0" Grid.Row="2" HorizontalAlignment="Center" Click="ClosedOrders_Click"></Button>
 
-            </StackPanel>
-
-        </ListBox>
-        <ItemsControl x:Name="Category" Grid.Column="1" Grid.ColumnSpan="2" Margin="0,60,0,-4" Grid.RowSpan="2">
-            <ItemsControl.ItemTemplate>
-                <DataTemplate>
-                    <Button BorderBrush="LightGray" Background="White" Click="Button_Click">
-                        <DockPanel>
-                            <TextBlock Margin="2" DockPanel.Dock="Left"  FontSize="16" Text="{Binding Path=Name}" />
-                        </DockPanel>
-                    </Button>
-                </DataTemplate>
-            </ItemsControl.ItemTemplate>
-        </ItemsControl>
-   
 
     </Grid>
 </Window>
